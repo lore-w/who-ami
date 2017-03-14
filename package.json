@@ -1,0 +1,22 @@
+{
+    "name": "who-ami",
+    "version": "1.0.0",
+    "description": "Who am I?",
+    "main": "index.js",
+    "author": "Lore-w",
+    "email": "metro-cpu@hotmail.com",
+    "license": "MIT",
+    "keywords": [
+        "who",
+        "git",
+        "user",
+        "username"
+    ],
+    "engines": {
+        "node": ">= 0.10.0"
+    },
+    "readmeFilename": "README.md",
+    "dependencies": {
+        "shelljs": "^0.7.7"
+    }
+}
