@@ -14,8 +14,7 @@ let userName,
 
 if (!shell.which('git')) {
 
-    let name = process.env.USER;
-    userName = reg.test(name) ? 'anonymity' : name;
+    userName = 'anonymity';
 } else {
 
     userName = shell.exec('git config --get user.name', {
