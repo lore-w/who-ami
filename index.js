@@ -7,15 +7,10 @@
 "use strict";
 let shell = require('shelljs');
 
+let userName = '',
+    userEmail = '';
 
-let userName,
-    userEmail = '',
-    reg = new RegExp("[\\u4E00-\\u9FFF]+","g");
-
-if (!shell.which('git')) {
-
-    userName = 'anonymity';
-} else {
+if (shell.which('git')) {
 
     userName = shell.exec('git config --get user.name', {
         silent: true
@@ -25,7 +20,7 @@ if (!shell.which('git')) {
         silent: true
     }).stdout.trim();
 
-    userName = !!userName ? userName : 'anonymity';
+    userName = !!userName ? userName : '';
     userEmail = !!userEmail ? userEmail : '';
 }
 
